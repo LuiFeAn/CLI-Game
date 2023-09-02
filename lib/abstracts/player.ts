@@ -1,13 +1,17 @@
-import { IPlayer } from "../interfaces/player"
+import { IPlayer, IPlayerConfigs } from "../interfaces/player";
 
-export abstract class AbstractPlayer implements IPlayer {
+import { AbstractPlayerClass } from "./classes"
 
-    private name: string
-    private power: number
+export abstract class AbstractPlayer<T extends AbstractPlayerClass> implements IPlayer {
 
-    constructor(name: string,power:number){
-        this.name = name;
-        this.power = power;
+    private name
+    private power
+    public classe
+
+    constructor(configs: IPlayerConfigs<T>){
+        this.classe = configs.class
+        this.name = configs.name;
+        this.power = configs.power;
     }
 
     attack(){

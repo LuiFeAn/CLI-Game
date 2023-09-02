@@ -1,18 +1,15 @@
-import { Enemy } from "../lib/enemy/enemy";
-import { EnemyFactory } from "../lib/enemy/enemy-factory";
+import { Player } from "../lib/player/player";
 
-import { EnemyGenerator } from "../lib/enemy/enemy-generator";
+import { Mage } from "../lib/classes/classes";
 
-const enemyFactory = new EnemyFactory();
-
-const braveBird = enemyFactory.create('BIRD',{
-    power:300,
-    velocity:200
+const warriorPlayer = new Player({
+    class: new Mage(),
+    name:'Luis Fernando',
+    power:200
 });
 
-const poorBird = enemyFactory.create('BIRD',{
-    power:100,
-    velocity:10
-});
+
+
+
 
 
