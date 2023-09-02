@@ -7,11 +7,13 @@ export abstract class AbstractPlayer<T extends AbstractPlayerClass> implements I
     private name
     private power
     public classe
+    public iventory
 
     constructor(configs: IPlayerConfigs<T>){
         this.classe = configs.class
         this.name = configs.name;
         this.power = configs.power;
+        this.iventory = configs.iventory
     }
 
     attack(){
