@@ -21,7 +21,7 @@ export class Inventory {
     getItem(_item: string){
 
         const selectedItem = this.items.find( 
-            item => item.item.includes(_item) 
+            item => item.name.includes(_item) 
         );
 
         return selectedItem;
@@ -38,7 +38,7 @@ export class Inventory {
 
         }
 
-        const updatedItemList = this.items.filter( item => item.item != _item );
+        const updatedItemList = this.items.filter( item => item.name != _item );
 
         this.items = updatedItemList;
 
