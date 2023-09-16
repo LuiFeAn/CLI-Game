@@ -25,30 +25,6 @@ export abstract class AbstractWeapon extends AbstractItem {
     }
 }
 
-export class WoodSword extends AbstractWeapon {
 
-    constructor(){
 
-        super({
-            description:'A wooden sword made from the trees of the fairy forest',
-            name:'Wood Sword',
-            baseDamge:[2,7]
-        })
-        
-    }
-}
-
-export class WoodStaff extends AbstractWeapon {
-
-    constructor(){
-
-        super({
-            description:'A staff maked with woods of desert florest',
-            name:'Wood Sword',
-            baseDamge:[1,3]
-        })
-
-    }
-
-}
 
