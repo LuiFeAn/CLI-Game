@@ -10,15 +10,16 @@ const magePlayer = new Player({
     power:200,
     iventory: new Inventory([
         {
-            item:'Colar Âmbar',
+            name:'Colar Âmbar',
             quanty:2,
             description:'Colar ambar que cura todos que estiverem ao seu redor'
         },
         {
-            item:'Cajado de mago',
+            name:'Cajado de mago',
             quanty:1,
             description:'Cajado de mago simples, recebido na escola de magia'
-        }
+        },
+        
     ])
 });
 
